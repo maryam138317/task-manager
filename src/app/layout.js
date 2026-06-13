@@ -3,7 +3,6 @@ import ThemeRegistary from "./themeRegistary";
 import { SearchProvider } from "../../components/searchContext";
 import Navbar from "../../components/nav-bar";
 
-
 export const metadata = {
   title: "Task Manager",
   description: "A Tool to manage your tasks",
@@ -14,8 +13,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <SearchProvider>
-          <ThemeRegistary initialMode={'dark'}>
-            <main style={{ paddingBottom: '80px' }}>
+          <ThemeRegistary initialMode="dark">
+            <main style={{ paddingBottom: "80px" }}>
               {children}
             </main>
             <Navbar />

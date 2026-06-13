@@ -2,6 +2,8 @@ import { Typography, Container,Grid } from "@mui/material";
 import { getTasksByPriority } from "../../../lib/tasks";
 import PriorityBox from "../../../components/priority-task-box";
 
+export const dynamic = "force-dynamic";
+
 export default function Priority() {
     // Note: In Next.js App Router, these calls are usually done in a Server Component
     const priorityTasks = [

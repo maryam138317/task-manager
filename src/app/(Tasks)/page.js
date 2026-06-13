@@ -2,6 +2,7 @@ import { Paper } from "@mui/material";
 import { getTodayTasks } from "../../../lib/tasks";
 import TaskGrid from "../../../components/task-grid";
 
+export const dynamic = "force-dynamic";
 
 export default function TodaysTask() {
 

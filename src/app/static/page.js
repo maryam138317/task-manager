@@ -4,6 +4,8 @@ import { getAllTasks, getPrioritySummary, getStatusSummary } from "../../../lib/
 import PieChartComponent from "../../../components/pie-chart";
 import BarChartComponent from "../../../components/bar-chart";
 
+export const dynamic = "force-dynamic";
+
 export default function Status() {
 
     const tasksNumber = getAllTasks().length;

@@ -1,14 +1,13 @@
-const sql = require('better-sqlite3')
+const Database = require('better-sqlite3');
+const path = require('path');
 
-const db = sql('tasks.db');
+const dbPath = path.join(process.cwd(), 'tasks.db');
+
+console.log('Database file:', dbPath);
+
+const db = new Database(dbPath);
 
 const dummyTasks = [
-    {
-        title : 'study for exam',
-        status : 0,
-        date : new Date().toISOString().split('T')[0],
-        priority : 2
-    }
 ];
 
 db.prepare(`
